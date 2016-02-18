@@ -1,6 +1,9 @@
 {
   "name": "ng-cordova-oauth",
-  "main": ["dist/ng-cordova-oauth.js", "dist/ng-cordova-oauth.min.js"],
+  "main": [
+    "dist/ng-cordova-oauth.js",
+    "dist/ng-cordova-oauth.min.js"
+  ],
   "version": "0.2.3",
   "homepage": "https://github.com/nraboy/ng-cordova-oauth",
   "authors": [
@@ -27,5 +30,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "oauth-ng": "~0.4.8"
+  }
 }
