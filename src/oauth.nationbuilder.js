@@ -21,7 +21,7 @@ function nationbuilder($q, $http, $cordovaOauthUtility) {
             redirect_uri = options.redirect_uri;
           }
         }
-        var browserRef = window.cordova.InAppBrowser.open("https://gu.nationbuilder.com/oauth/authorize?client_id=" + appKey + "&redirect_uri=" + redirect_uri + "&response_type=token);
+        var browserRef = window.cordova.InAppBrowser.open("https://gu.nationbuilder.com/oauth/authorize?client_id=" + appKey + "&redirect_uri=" + redirect_uri + "&response_type=token");
         browserRef.addEventListener("loadstart", function(event) {
           if ((event.url).indexOf(redirect_uri) === 0) {
             browserRef.removeEventListener("exit",function(event){});
